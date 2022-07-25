@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bethany's Pie Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+ <div class="container">
+        <h2>Using form components</h2>
+
+        <form>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control-plaintext" value="Email adress" readonly id="emailInput">
+          </div>
+          <div class="mb-3">
+              <label for="commentTextArea" class="form-label">Comments</label>
+              <textarea class="form-control" id="commentTextArea" row="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="uploadFile" class="form-label">Upload pie picture</label>
+            <input class="form-control" type="file" id="uploadFile">
+          </div>
+
+          <div class="mb-3">
+            <label for="pieSizeSelect" class="form-label">Select pie size</label>
+            <select class="form-select">
+              <option selected>Choose your request size</option>
+              <option valu="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="pieSliceRange" class="form-label">How many slice do you want?</label>
+            <input class="form-range" type="range" id="pieSliceRange">
+          </div>
+
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="rememberMeCheck">
+            <label for="rememberMeCheck" class="form-check-label">
+              Remember me
+            </label>
+          </div>
+
+          <div class="mb-3 form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="useStoreCreditCard">
+            <label for="useStoreCreditCard" class="form-check-label">Use my credit card on file</label>
+          </div>
+
+          <div class="mb-3">
+            <input class="btn-check" type="checkbox" id="usePointsInput" autocomplete="off" checked>
+            <label for="usePointsInput" class="btn btn-primary">Use my points</label>
+          </div>
+
+        </form>
+</body>
+
+</html>
