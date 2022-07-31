@@ -8,18 +8,19 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
- <div class="container">
+    <div class="container">
         <h2>Basic form</h2>
 
-         <form>
+        <form>
             <div class="mb-3">
                 <label for="emailInput" class="form-label">Email address</label>
-                <input type="email" class="form-control"  id="emailInput" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="passwordInput" class="form-label">Password</label>
-                <input type="password" class="form-control"  id="passwordInput">
+                <input type="password" class="form-control" id="passwordInput">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rememberMeCheck">
@@ -35,8 +36,41 @@
                     <label for="emailInput" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
                 </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Log in</button>
+        </form>
+
+        <h2>Horizontal form</h2>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                </div>
 
                 <div class="col">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Log in</button>
+        </form>
+
+        <h2>Sizing the form components through the Grid system</h2>
+        <form>
+            <div class="row">
+                <div class="col-sm-8">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                </div>
+
+                <div class="col-sm-4">
                     <label for="passwordInput" class="form-label">Password</label>
                     <input type="password" class="form-control" id="passwordInput">
                 </div>
@@ -58,7 +92,9 @@
             </div>
             <button type="submit" class="btn btn-primary mt-3">Log in</button>
         </form>
-	</div>
+
+    </div>
+
 </body>
 
 </html>
